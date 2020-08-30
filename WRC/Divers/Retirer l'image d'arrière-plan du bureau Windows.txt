@@ -1,0 +1,31 @@
+// Exemple pour écrire dans la base de registre
+
+void InsertInitWindows(BOOL bIns)
+{
+	char szThis[300] /*va contenir le chemin d'acces du programme */
+		, szValue[] = "bnuRappels"; /*nom de la valeur que l'on va inscrite dans la colonne "nom" de la base de registre*/
+	HKEY hKey;
+	DWORD dwDispo;
+
+	if(RegCreateKeyEx(HKEY_CURRENT_USER, "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",0, 0,REG_OPTION_NON_VOLATILE, KEY_ALL_ACCESS, 0, &hKey, &dwDispo) != ERROR_SUCCESS) return;
+
+	if(bIns)
+	{
+		GetModuleFileName(NULL, szThis, 300);/*On recupere le chemin d'acces du programme que l'on stocke dans szThis*/
+		strcat(szThis, " s");//on peut ajouter des parametres 
+		RegSetValueEx(hKey, szValue, 0, REG_SZ, (const unsigned char*)szThis, strlen(szThis));/*on "set" la valeur: ici le nom est "bnuRappels", le type "REG_SZ soit une chaine" et la valeur "szThis qui contient le chemin d'acces (genre c:\nomdupro.exe s"*/
+	}
+	else
+		RegDeleteValue(hKey, szValue);//pour supprimer la cle
+		RegCloseKey(hKey);
+}
+
+// Chemin du wallpaper
+
+Le Papier Peint
+
+Le fond d'écran de Windows est affiché soit en mode mosaïque, soit centré sur le Bureau. Avec l'apparition de Plus! et de Windows 98,
+on peut également l'étirer sur tout le bureau. Cependant, sans vouloir étirer l'image que vous souhaitez afficher, ni la centrer, il faut passer
+par la BDR pour lui fixer des coordonnée de positionnement précises.
+Allez à la clef : HKEY_CURRENT_USER\Control Panel\desktop et dans le panneau de droite créez deux chaînes "WallpaperOriginX" et
+"WallpaperOriginY". Attribuez-leur ensuite les données exprimées en pixels.

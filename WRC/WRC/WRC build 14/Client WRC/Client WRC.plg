@@ -1,0 +1,116 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Client WRC - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\fuchs\LOCALS~1\Temp\RSP36.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"c:\temp\client/" /Fp"c:\temp\client/Client WRC.pch" /YX /Fo"c:\temp\client/" /Fd"c:\temp\client/" /FD /GZ /c 
+"Z:\Projet\Projet 76 - 3IL A3 - Aurélien JOUHAUD, Pierre LE CLAINCHE et Steve FUCHS\WRC build 14\Client WRC\client.cpp"
+"Z:\Projet\Projet 76 - 3IL A3 - Aurélien JOUHAUD, Pierre LE CLAINCHE et Steve FUCHS\WRC build 14\Client WRC\connexion.cpp"
+"Z:\Projet\Projet 76 - 3IL A3 - Aurélien JOUHAUD, Pierre LE CLAINCHE et Steve FUCHS\WRC build 14\Client WRC\debug.cpp"
+"Z:\Projet\Projet 76 - 3IL A3 - Aurélien JOUHAUD, Pierre LE CLAINCHE et Steve FUCHS\WRC build 14\Client WRC\importation_image.cpp"
+"Z:\Projet\Projet 76 - 3IL A3 - Aurélien JOUHAUD, Pierre LE CLAINCHE et Steve FUCHS\WRC build 14\Client WRC\jpeg.cpp"
+"Z:\Projet\Projet 76 - 3IL A3 - Aurélien JOUHAUD, Pierre LE CLAINCHE et Steve FUCHS\WRC build 14\Client WRC\reception_ecran.cpp"
+"Z:\Projet\Projet 76 - 3IL A3 - Aurélien JOUHAUD, Pierre LE CLAINCHE et Steve FUCHS\WRC build 14\Client WRC\registre.cpp"
+"Z:\Projet\Projet 76 - 3IL A3 - Aurélien JOUHAUD, Pierre LE CLAINCHE et Steve FUCHS\WRC build 14\Client WRC\rsa.cpp"
+"Z:\Projet\Projet 76 - 3IL A3 - Aurélien JOUHAUD, Pierre LE CLAINCHE et Steve FUCHS\WRC build 14\Client WRC\sha.cpp"
+"Z:\Projet\Projet 76 - 3IL A3 - Aurélien JOUHAUD, Pierre LE CLAINCHE et Steve FUCHS\WRC build 14\Client WRC\thread_clavier_souris.cpp"
+"Z:\Projet\Projet 76 - 3IL A3 - Aurélien JOUHAUD, Pierre LE CLAINCHE et Steve FUCHS\WRC build 14\Client WRC\thread_ecran.cpp"
+"Z:\Projet\Projet 76 - 3IL A3 - Aurélien JOUHAUD, Pierre LE CLAINCHE et Steve FUCHS\WRC build 14\Client WRC\thread_fichier.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\fuchs\LOCALS~1\Temp\RSP36.tmp" 
+Creating temporary file "C:\DOCUME~1\fuchs\LOCALS~1\Temp\RSP37.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib jpeg\jpeg.lib /nologo /subsystem:windows /incremental:yes /pdb:"C:\TEMP\Client\Client WRC.pdb" /debug /machine:I386 /nodefaultlib:"libc" /out:"Debug/Client WRC.exe" /pdbtype:sept 
+"c:\temp\client\client.obj"
+"c:\temp\client\connexion.obj"
+"c:\temp\client\debug.obj"
+"c:\temp\client\importation_image.obj"
+"c:\temp\client\jpeg.obj"
+"c:\temp\client\reception_ecran.obj"
+"c:\temp\client\registre.obj"
+"c:\temp\client\rsa.obj"
+"c:\temp\client\sha.obj"
+"c:\temp\client\thread_clavier_souris.obj"
+"c:\temp\client\thread_ecran.obj"
+"c:\temp\client\thread_fichier.obj"
+"c:\temp\client\adler32.obj"
+"c:\temp\client\compress.obj"
+"c:\temp\client\crc32.obj"
+"c:\temp\client\deflate.obj"
+"c:\temp\client\gzio.obj"
+"c:\temp\client\infblock.obj"
+"c:\temp\client\infcodes.obj"
+"c:\temp\client\inffast.obj"
+"c:\temp\client\inflate.obj"
+"c:\temp\client\inftrees.obj"
+"c:\temp\client\infutil.obj"
+"c:\temp\client\maketree.obj"
+"c:\temp\client\trees.obj"
+"c:\temp\client\uncompr.obj"
+"c:\temp\client\zutil.obj"
+"c:\temp\client\resource.res"
+".\jpeg\jpeg.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\fuchs\LOCALS~1\Temp\RSP37.tmp"
+<h3>Output Window</h3>
+Compiling...
+client.cpp
+Skipping... (no relevant changes detected)
+connexion.cpp
+debug.cpp
+importation_image.cpp
+jpeg.cpp
+reception_ecran.cpp
+registre.cpp
+rsa.cpp
+sha.cpp
+thread_clavier_souris.cpp
+thread_ecran.cpp
+thread_fichier.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\fuchs\LOCALS~1\Temp\RSP38.tmp" with contents
+[
+/nologo /o"C:\TEMP\Client\Client WRC.bsc" 
+c:\temp\client\client.sbr
+c:\temp\client\connexion.sbr
+c:\temp\client\debug.sbr
+c:\temp\client\importation_image.sbr
+c:\temp\client\jpeg.sbr
+c:\temp\client\reception_ecran.sbr
+c:\temp\client\registre.sbr
+c:\temp\client\rsa.sbr
+c:\temp\client\sha.sbr
+c:\temp\client\thread_clavier_souris.sbr
+c:\temp\client\thread_ecran.sbr
+c:\temp\client\thread_fichier.sbr
+c:\temp\client\adler32.sbr
+c:\temp\client\compress.sbr
+c:\temp\client\crc32.sbr
+c:\temp\client\deflate.sbr
+c:\temp\client\gzio.sbr
+c:\temp\client\infblock.sbr
+c:\temp\client\infcodes.sbr
+c:\temp\client\inffast.sbr
+c:\temp\client\inflate.sbr
+c:\temp\client\inftrees.sbr
+c:\temp\client\infutil.sbr
+c:\temp\client\maketree.sbr
+c:\temp\client\trees.sbr
+c:\temp\client\uncompr.sbr
+c:\temp\client\zutil.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\fuchs\LOCALS~1\Temp\RSP38.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Client WRC.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

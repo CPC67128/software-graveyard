@@ -1,0 +1,6 @@
+void RecupererResolution()
+{
+	POINT Ecran = {GetSystemMetrics(SM_CXSCREEN),	GetSystemMetrics(SM_CYSCREEN)};
+	Ecran.x = Taille x;
+	Ecran.y = Taille y;
+}
