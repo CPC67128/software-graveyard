@@ -1,0 +1,8 @@
+Sys. fich.     1K-blocks   Util. Disponible Uti% MontÃ© sur
+rootfs          30616076 1762244   27591392   7% /
+/dev/root       30616076 1762244   27591392   7% /
+devtmpfs          240516       0     240516   0% /dev
+tmpfs              49756     236      49520   1% /run
+tmpfs               5120       0       5120   0% /run/lock
+tmpfs              99500       0      99500   0% /run/shm
+/dev/mmcblk0p1     57288   18960      38328  34% /boot

@@ -1,0 +1,1 @@
+<img src="http://raspberrypi.stevefuchs.fr:1935/?action=stream" />

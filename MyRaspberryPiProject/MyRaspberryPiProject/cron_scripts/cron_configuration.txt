@@ -1,0 +1,5 @@
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * df >/var/www/cron_scripts/df.out
+1,6,11,16,21,26,31,36,41,46,51,56 * * * * php /var/www/cron_scripts/df.php
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * ps aux --sort=-\%cpu >/var/www/cron_scripts/ps_cpu.out
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * ps aux --sort=-\%mem >/var/www/cron_scripts/ps_mem.out
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * php /var/www/cron_scripts/meminfo.php

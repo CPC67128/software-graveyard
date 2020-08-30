@@ -1,0 +1,72 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+mysql     2270  0.4  7.4 324476 36976 ?        Sl   20:19   0:22 /usr/sbin/mysqld --basedir=/usr --datadir=/var/lib/mysql --plugin-dir=/
+pi        2652  0.3  0.5   6288  2872 pts/0    Ss   21:11   0:07 -bash
+pi        2651  0.1  0.3   9804  1696 ?        S    21:11   0:02 sshd: pi@pts/0
+root         1  0.0  0.1   2144   728 ?        Ss   20:18   0:01 init [2]
+root         2  0.0  0.0      0     0 ?        S    20:18   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    20:18   0:00 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   20:18   0:00 [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        S    20:18   0:00 [kworker/u:0]
+root         7  0.0  0.0      0     0 ?        S<   20:18   0:00 [kworker/u:0H]
+root         8  0.0  0.0      0     0 ?        S<   20:18   0:00 [khelper]
+root         9  0.0  0.0      0     0 ?        S    20:18   0:00 [kdevtmpfs]
+root        10  0.0  0.0      0     0 ?        S<   20:18   0:00 [netns]
+root        12  0.0  0.0      0     0 ?        S    20:18   0:00 [bdi-default]
+root        13  0.0  0.0      0     0 ?        S<   20:18   0:00 [kblockd]
+root        14  0.0  0.0      0     0 ?        S    20:18   0:00 [khubd]
+root        15  0.0  0.0      0     0 ?        S<   20:18   0:00 [rpciod]
+root        16  0.0  0.0      0     0 ?        S    20:18   0:00 [khungtaskd]
+root        17  0.0  0.0      0     0 ?        S    20:18   0:00 [kswapd0]
+root        18  0.0  0.0      0     0 ?        S    20:18   0:00 [fsnotify_mark]
+root        19  0.0  0.0      0     0 ?        S<   20:18   0:00 [nfsiod]
+root        20  0.0  0.0      0     0 ?        S<   20:18   0:00 [crypto]
+root        27  0.0  0.0      0     0 ?        S<   20:18   0:00 [kthrotld]
+root        28  0.0  0.0      0     0 ?        S<   20:18   0:00 [VCHIQ-0]
+root        29  0.0  0.0      0     0 ?        S<   20:18   0:00 [VCHIQr-0]
+root        30  0.0  0.0      0     0 ?        S<   20:18   0:00 [VCHIQs-0]
+root        31  0.0  0.0      0     0 ?        S<   20:18   0:00 [iscsi_eh]
+root        32  0.0  0.0      0     0 ?        S<   20:18   0:00 [dwc_otg]
+root        33  0.0  0.0      0     0 ?        S<   20:18   0:00 [DWC Notificatio]
+root        35  0.0  0.0      0     0 ?        S<   20:19   0:00 [deferwq]
+root        36  0.0  0.0      0     0 ?        S    20:19   0:00 [kworker/u:2]
+root        37  0.0  0.0      0     0 ?        S    20:19   0:02 [mmcqd/0]
+root        38  0.0  0.0      0     0 ?        S    20:19   0:00 [jbd2/mmcblk0p2-]
+root        39  0.0  0.0      0     0 ?        S<   20:19   0:00 [ext4-dio-unwrit]
+root       142  0.0  0.2   2880  1272 ?        Ss   20:19   0:00 udevd --daemon
+root       266  0.0  0.2   2876  1024 ?        S    20:19   0:00 udevd --daemon
+root       367  0.0  0.0      0     0 ?        S    20:19   0:00 [flush-179:0]
+root       590  0.0  0.1   2876   908 ?        S    20:19   0:00 udevd --daemon
+root      1345  0.0  0.1   1744   504 ?        S    20:19   0:00 /usr/sbin/ifplugd -i lo -q -f -u0 -d10 -w -I
+root      1407  0.0  0.1   1744   512 ?        S    20:19   0:02 /usr/sbin/ifplugd -i eth0 -q -f -u0 -d10 -w -I
+root      1660  0.0  0.3  27968  1520 ?        Sl   20:19   0:00 /usr/sbin/rsyslogd -c5
+root      1709  0.0  0.3   4892  1988 ?        Ss   20:19   0:00 dhclient -1 -v -pf /run/dhclient.eth0.pid -lf /var/lib/dhcp/dhclient.et
+root      1737  0.0  1.6  39108  7964 ?        Ss   20:19   0:00 /usr/sbin/apache2 -k start
+www-data  1793  0.0  1.1  39212  5820 ?        S    20:19   0:00 /usr/sbin/apache2 -k start
+www-data  1794  0.0  1.9  40544  9508 ?        S    20:19   0:01 /usr/sbin/apache2 -k start
+root      1795  0.0  0.1   4300   956 ?        Ss   20:19   0:00 /usr/sbin/cron
+www-data  1796  0.0  1.1  39212  5808 ?        S    20:19   0:00 /usr/sbin/apache2 -k start
+www-data  1798  0.0  0.9  39132  4508 ?        S    20:19   0:00 /usr/sbin/apache2 -k start
+www-data  1799  0.0  1.9  40544  9508 ?        S    20:19   0:01 /usr/sbin/apache2 -k start
+104       1803  0.0  0.2   3176  1036 ?        Ss   20:19   0:00 /usr/bin/dbus-daemon --system
+ntp       1883  0.0  0.3   5508  1716 ?        Ss   20:19   0:00 /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 102:104
+root      1908  0.0  0.1   1752   556 ?        S    20:19   0:00 /bin/sh /usr/bin/mysqld_safe
+proftpd   2217  0.0  0.3   9920  1792 ?        Ss   20:19   0:00 proftpd: (accepting connections)
+root      2271  0.0  0.1   1844   600 ?        S    20:19   0:00 logger -t mysqld -p daemon.error
+root      2299  0.0  0.2   6208  1064 ?        Ss   20:19   0:00 /usr/sbin/sshd
+nobody    2337  0.0  0.1   2012   636 ?        Ss   20:19   0:00 /usr/sbin/thd --daemon --triggers /etc/triggerhappy/triggers.d/ --socke
+root      2424  0.0  0.1   4220   804 tty1     Ss+  20:19   0:00 /sbin/getty --noclear 38400 tty1
+root      2425  0.0  0.1   4220   804 tty2     Ss+  20:19   0:00 /sbin/getty 38400 tty2
+root      2426  0.0  0.1   4220   804 tty3     Ss+  20:19   0:00 /sbin/getty 38400 tty3
+root      2427  0.0  0.1   4220   804 tty4     Ss+  20:19   0:00 /sbin/getty 38400 tty4
+root      2428  0.0  0.1   4220   804 tty5     Ss+  20:19   0:00 /sbin/getty 38400 tty5
+root      2429  0.0  0.1   4220   804 tty6     Ss+  20:19   0:00 /sbin/getty 38400 tty6
+root      2430  0.0  0.1   2060   732 ?        Ss+  20:19   0:00 /sbin/getty -L ttyAMA0 115200 vt100
+www-data  2518  0.0  0.9  39132  4488 ?        S    20:28   0:00 /usr/sbin/apache2 -k start
+www-data  2519  0.0  0.9  39132  4488 ?        S    20:28   0:00 /usr/sbin/apache2 -k start
+www-data  2520  0.0  0.9  39132  4488 ?        S    20:28   0:00 /usr/sbin/apache2 -k start
+root      2521  0.0  0.0      0     0 ?        S    20:28   0:00 [kworker/0:0]
+root      2573  0.0  0.6   9804  3156 ?        Ss   21:11   0:00 sshd: pi [priv]
+root      2578  0.0  0.7  26516  3684 ?        Sl   21:11   0:00 /usr/sbin/console-kit-daemon --no-daemon
+root      2645  0.0  0.5  23308  2928 ?        Sl   21:11   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root      2791  0.0  0.0      0     0 ?        S    21:36   0:00 [kworker/0:2]
+pi        2910  0.0  0.2   4920  1148 pts/0    R+   21:45   0:00 ps aux --sort=-%cpu
