@@ -6,3 +6,4 @@
 * WRC (2004) : solution de prise de contrôle à distance d'un poste Windows
 * MyRaspberryPiProject (2013) : projet de découverte du Raspberry Pi
 * PasswordGenerator : générateur de mots de passe
+* RasPi-Somfy : projet de pilotage de mes volets roulants Somfy IO via le Raspberry Pi
