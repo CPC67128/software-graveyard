@@ -1,0 +1,15 @@
+# Transfert correct d'un fichier de 0 octet avec quelques surprises
+#
+# Réception du RRQ
+RECV
+# Démarrage du transfert
+DATA 1 0
+RECV
+# Un paquet d'acquittement se perd
+WRQ fichier
+RECV
+RRQ fichier
+RECV
+ERROR 4
+# Bouclage final
+RECV

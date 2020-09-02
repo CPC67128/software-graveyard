@@ -1,0 +1,48 @@
+# salut à tous ceux qui lisent mon
+# piti scenar fait maison.
+# bien sur pour comprendre i fo mon graph
+# d'événement !! ;-)
+#################################################
+# Transfert complet avec quelque accro en chemin
+#################################################
+# evt 0
+RECV
+# evt 1.4
+RECV 6
+RECV 6
+RECV 6
+# evt 1.1
+DATA 1
+RECV 6
+# evt 2.5
+RECV 6
+# evt 2.2
+DATA 5
+RECV
+# evt 2.5
+DATA 2
+RECV
+# evt 2.1
+TID
+DATA 3
+RECV
+# evt 2.2
+TID
+RECV
+DATA 3
+RECV
+# evt 2.3
+DATA 4 5
+RECV
+# evt 3.1
+TID
+WRQ mlgmflkgh
+RECV
+# evt 3.3
+TID
+RECV
+RRQ dmflghkm
+RECV 6
+# evt 3.5
+RECV 6
+RECV 5

@@ -1,0 +1,11 @@
+# Trasnfert qui se déroule mal coté serveur qui ne reçoit jamais de paquet d'acquittement
+#
+# Réception du RRQ
+RECV
+# Attente de N = NMAX
+RECV
+RECV
+RECV
+RECV
+# Bouclage final
+RECV

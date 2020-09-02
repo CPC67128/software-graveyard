@@ -1,0 +1,25 @@
+# Transfert correct d'un fichier de 2048 octets avec perte de quelques paquets et erreur final
+#
+# Réception du RRQ
+RECV
+# Démarrage du transfert
+DATA 1
+RECV
+DATA 2
+RECV
+DATA 3
+# Un paquet d'acquittement se perd
+RECV
+RECV
+DATA 4
+# Plusieurs paquets d'acquittements se perdent
+RECV
+RECV
+RECV
+RECV
+DATA 5 0
+RECV
+# Envoi d'un paquet d'erreur pendant la phase de la libération
+ERROR 0
+# Bouclage final
+RECV

@@ -1,0 +1,30 @@
+# salut à tous ceux qui lisent mon
+# piti scenar fait maison.
+# bien sur pour comprendre se qui se passe,
+# i fo mon graph d'événement !! ;-)
+##########################################################
+# Transfert d'un bloc < 512 et envoie continue de message
+##########################################################
+# evt 0
+RECV
+# evt 1.2
+DATA 1 57
+RECV
+# evt 3.3
+WRQ mlgmflkgh
+RECV
+# evt 3.3
+WRQ mlgmflkgh
+RECV
+# evt 3.3
+WRQ mlgmflkgh
+RECV
+# evt 3.3
+WRQ mlgmflkgh
+RECV
+# evt 3.3
+WRQ mlgmflkgh
+RECV
+# evt 3.4
+WRQ mlgmflkgh
+RECV

@@ -1,0 +1,31 @@
+# Transfert correct d'un fichier de 2048 octets avec paquets d'un autre processus
+#
+# Réception du RRQ
+RECV
+# Début du transfert
+DATA 1
+RECV
+DATA 2
+RECV
+DATA 3
+RECV
+# Un autre processus nous offre ses paquets
+TID
+DATA 4
+RECV
+# Il envoie un paquet d'erreur en prime
+ERROR 4
+RECV
+#Notre bon procesus reprend le dessus
+TID
+RECV
+RECV
+DATA 4
+RECV
+DATA 5 0
+RECV
+# Pendant la phase de libération
+DATA 87
+RECV
+# Bouclage final
+RECV

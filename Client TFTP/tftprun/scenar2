@@ -1,0 +1,14 @@
+# salut à tous ceux qui lisent mon
+# piti scenar fait maison.
+# bien sur pour comprendre se qui se passe,
+# i fo mon graph d'événement !! ;-)
+##########################################################
+# Envoie d'un premier bloc réussi puis erreur du serveur
+##########################################################
+# evt 0
+RECV
+# evt 1.1
+DATA 1
+RECV
+# evt 2.4
+ERROR 34 Erreur_dans_fatal_dans_le_VXD_...

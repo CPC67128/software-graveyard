@@ -1,0 +1,34 @@
+# salut à tous ceux qui lisent mon
+# piti scenar fait maison.
+# bien sur pour comprendre se qui se passe,
+# i fo mon graph d'événement !! ;-)
+################################################
+# Envoie des 2 premiers bloc (= 512) réussi puis
+# envoie continu de message du serveur
+################################################
+# evt 0
+RECV
+# evt 1.1
+DATA 1
+RECV
+# evt 2.2
+DATA 2
+RECV
+# evt 2.5
+RRG sdfsdfds
+RECV
+# evt 2.5
+RRG sdfsdfds
+RECV
+# evt 2.5
+RRG sdfsdfds
+RECV
+# evt 2.5
+RRG sdfsdfds
+RECV
+# evt 2.5
+RRG sdfsdfds
+RECV
+# evt 2.6
+RRG sdfsdfds
+RECV

@@ -1,0 +1,46 @@
+
+
+
+tftp(1)                  USER COMMANDS                    tftp(1)
+
+
+
+NAME
+     tftp - trivial file transfer program
+
+SYNOPSIS
+     tftp [ host ]
+
+DESCRIPTION
+     tftp is the user interface to  the  Internet  TFTP  (Trivial
+     File  Transfer  Protocol),  which  allows  users to transfer
+     files to and from a remote machine.  The remote host may  be
+     specified  on the command line, in which case tfttp uses host
+     as the default host for future transfers  (see  the  connnect
+     command below).
+
+USAGE
+  Commands
+     Once tftp is running, it issues the prompt tftp> and  recog-
+     nizes the following commands:
+
+     connect host-name [ port ]
+           Set the host (and optionally port) for transfers.  The
+           TFTP protocol, unlike the FTP protocol, does not main-
+           tain connections between transfers; thus, the  connect
+           command  does  not  actually  create a connection, but
+           merely  remembers  what  host  is  to  be   used   for
+           transfers.   You  do  not have to use the connect com-
+           mand; the remote host can be specified as part of  the
+           get or put commands.
+
+     mode transfer-mode
+           Set the mode for transfers; transfer-mode may  be  one
+           of ascii or binary.  The default is ascii
+
+     put filename
+     put localfile remotefile
+     put filename1 filename2 ... filenameN remote-directory
+           Transfer a file, or a set of files, to  the  specified
+           remote  file  or directory.  The destination
+
