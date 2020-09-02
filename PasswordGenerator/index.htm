@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PWD</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="Description" content="Générateur de mots de passe écrit par Steve Fuchs">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<style>
+body {
+	font-size: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+	font-size: 12px;
+}
+
+a:link, a:active, a:visited, a:hover {
+	text-decoration: none;
+	color: #11F;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#password {
+	font-size: 20px;
+	background-color: LIGHTCORAL;
+}
+</style>
+</head>
+<body onload="GeneratePassword();">
+<h1>PassWorD Generator / Générateur de mots de passe</h1>
+Password can starts with: / Le mot de passe peut débuter par :<br />
+<input id="startuppercase" type="checkbox" checked>uppercase character / majuscule<br />
+<input id="startlowercase" type="checkbox" checked>lowercase character / minuscule<br />
+<input id="startnumber" type="checkbox">number / chiffre<br />
+<input id="startother" type="checkbox">other / autre<br />
+<br />
+Password can contain: / Le mot de passe peut contenir :<br />
+<input id="containuppercase" type="checkbox" checked>uppercase characters / majuscules<br />
+<input id="containlowercase" type="checkbox" checked>lowercase characters / minuscules<br />
+<input id="containnumber" type="checkbox" checked>numbers / chiffres<br />
+<input id="containother" type="checkbox" checked>others / autres<br />
+<br />
+Others / Autres <input id="otherCharacters" type="text"><br />
+<br />
+Password length / Longueur du mot de passe <input id="passwordLen" type="text" value="15" size="3"><br />
+<br />
+<input type="button" value="Generate password / Générer le mot de passe" onclick="GeneratePassword();"><br />
+<br />
+<input id="password" type="text" value=""><br />
+<br />
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />
+<small><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">PWD / PassWorD generator</span> de <a xmlns:cc="http://creativecommons.org/ns#" href="http://stevefuchs.fr" property="cc:attributionName" rel="cc:attributionURL">Steve Fuchs</a> est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">licence Creative Commons Attribution 3.0 non transposé</a>.</small>
+
+</body>
+
+<script type="text/javascript">
+default_others = "<>,?;.:/!%=+)àç@_è-(é&";
+document.getElementById("otherCharacters").value = default_others; 
+
+function GeneratePassword()
+{
+	var uppercaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXTZ";
+	var lowercaseCharacters = "abcdefghiklmnopqrstuvwxyz";
+	var numbers = "0123456789";
+	var others = document.getElementById("otherCharacters").value;
+
+	startCharacters = "";
+	if (document.getElementById("startuppercase").checked)
+		startCharacters += uppercaseCharacters + uppercaseCharacters;
+	if (document.getElementById("startlowercase").checked)
+		startCharacters += lowercaseCharacters + lowercaseCharacters;
+	if (document.getElementById("startnumber").checked)
+		startCharacters += numbers + numbers;
+	if (document.getElementById("startother").checked)
+		startCharacters += others;
+
+	containsCharacters = "";
+	if (document.getElementById("containuppercase").checked)
+		containsCharacters += uppercaseCharacters + uppercaseCharacters;
+	if (document.getElementById("containlowercase").checked)
+		containsCharacters += lowercaseCharacters + lowercaseCharacters;
+	if (document.getElementById("containnumber").checked)
+		containsCharacters += numbers + numbers;
+	if (document.getElementById("containother").checked)
+		containsCharacters += others;
+
+	var passwordLength = document.getElementById("passwordLen").value;
+
+	var password = "";
+	for (i = 0; i < passwordLength; i++)
+	{
+		var randomNumber = Math.floor(Math.random() * 10000);
+
+		var choice = containsCharacters;
+		if (i == 0)
+			choice = startCharacters;
+
+		var position = randomNumber % choice.length;
+		password += choice.substring(position, position + 1);
+	}
+
+	passwordField = document.getElementById("password");
+	passwordField.value = password;
+}
+
+</script>
+
+</html>

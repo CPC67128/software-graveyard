@@ -5,3 +5,4 @@
 * www.karatedo.free.fr (2003) : site Internet en PHP3 sur le Karaté
 * WRC (2004) : solution de prise de contrôle à distance d'un poste Windows
 * MyRaspberryPiProject (2013) : projet de découverte du Raspberry Pi
+* PasswordGenerator : générateur de mots de passe
